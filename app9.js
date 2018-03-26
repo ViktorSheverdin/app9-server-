@@ -75,7 +75,7 @@ hbs.registerHelper('p_mess',(text) => {
 
 app.get('/me',(request, response) => {
 	response.render('index.hbs',{
-		putin: 'Controlled by V.V. Putin',
+		putin: 'Controlled by New Old President V.V. Putin',
 		ref1: '/about',
 		img: "http://media.mnn.com/assets/images/2015/05/hedgehog.jpg.653x0_q80_crop-smart.jpg"
 	});
