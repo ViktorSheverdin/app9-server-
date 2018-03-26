@@ -5,6 +5,8 @@ const geo = require('./weather.js')
 var app = express();
 var place = 'Folwark Leszczynowka';
 
+const port = process.env.PORT || 8080;
+
 // var f_place = document.getElementById('place_subbmit').addEventListner('click',
 // 		function(){
 // 			document.getElementById('input_place').getValue();
@@ -79,7 +81,7 @@ app.get('/me',(request, response) => {
 	});
 });
 
-app.listen(8080, () => {
+app.listen(port, () => {
 	console.log('Server is up on port 8080');
 });
 
